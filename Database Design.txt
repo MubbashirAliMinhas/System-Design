@@ -4,15 +4,18 @@ model NewsFeed {
     videos: Video[],
     userType: UserType,
     user_id: int,
-    DataCreated: Current_date
+    DataCreated: Current_date,
+    id: int primary key
 }
 
 model Image {
-    image: buffer
+    image: buffer,
+    news_feed_id: int
 }
 
 model Video {
-    video: buffer
+    video: buffer,
+    news_feed_id: int
 }
 
 enum UserType {
@@ -22,6 +25,14 @@ enum UserType {
 }
 
 model User {
-    userType: UserType.USER,
+    user_id: int,
+    userType: USER
+    followers: UserID[],
+    groups: GroupID[],
+    pages: PageID[],
+    posts: NewsFeedIDs[]
+}
 
+model UserID {
+    user_id: int,
 }

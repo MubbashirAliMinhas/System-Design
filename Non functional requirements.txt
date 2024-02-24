@@ -1,0 +1,11 @@
+Scalability
+Distributing the system in different parts to handle large amounts of data and to support high Scalability
+
+Fault Tolerance
+Handling the errors savely making sure in the worst case scenerio system data persist
+
+Avaliability
+Regularly maintaing the system
+
+Low latency
+rate limiting the routes
