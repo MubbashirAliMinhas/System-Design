@@ -1,0 +1,4 @@
+A Simple ranking system can be made by by checking the feed's user_id and user_type with the user's current pages, followers 
+and groups. Also newly matched created post appears at the top with a higher rank and then the older matched post will appear in the
+user news feed with a lower rank, if the news feed does not belong to the current user following, these post will then appear at the
+very end with the newly created first then the older ones.

@@ -1,0 +1,27 @@
+model NewsFeed {
+    text_data: string,
+    images: Image[],
+    videos: Video[],
+    userType: UserType,
+    user_id: int,
+    DataCreated: Current_date
+}
+
+model Image {
+    image: buffer
+}
+
+model Video {
+    video: buffer
+}
+
+enum UserType {
+    USER,
+    PAGE,
+    GROUP
+}
+
+model User {
+    userType: UserType.USER,
+
+}
